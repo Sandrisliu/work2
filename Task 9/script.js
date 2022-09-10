@@ -9,3 +9,11 @@ budget: number
 Metodas: 
 wasExpensive() - jeigu filmo "budget" yra daugiau nei 100 000 000 mln USD, tada grąžins true, kitu atveju false. 
 ------------------------------------------------------------------------------------------------------ */
+let Movie = new Object();
+
+Movie.name = 'Breaking Dawn';
+Movie.director = 'Bill Condon';
+Movie.budget = '3700000000';
+
+console.log(Movie);
+
