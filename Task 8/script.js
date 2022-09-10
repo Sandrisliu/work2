@@ -1,7 +1,26 @@
-/* ------------------------------ TASK 8 --------------------------------------------
-Sukurkite konstruktoriaus funkciją "Calculator" (naudokite ES5), kuri gebės sukurti objektus su 4 metodais:
-sum(a, b) - priima du skaičius ir grąžina jų sumą.
-subtraction(a, b) - priima du skaičius ir grąžina jų skirtumą.
-multiplication(a, b) - priima du skaičius ir grąžina jų daugybos rezultatą;
-division(a, b) - priima du skaičius ir grąžina jų dalybos rezultatą;
------------------------------------------------------------------------------------- */
+console.log(
+    [1, 2, 3, 4].reduce((a, b) => a + b, 0)
+  )
+  
+  console.log(
+    [].reduce((a, b) => a + b, 0)
+  )
+  
+  function display(val) {
+    document.getElementById('result').value += val
+    return val
+  }
+  
+  function solve() {
+    let x = document.getElementById('result').value
+    let y = eval(x);
+    document.getElementById('result').value = y
+    return y
+  }
+  
+  function clearScreen() {
+    document.getElementById('result').value = ''
+  
+  }
+  
+
